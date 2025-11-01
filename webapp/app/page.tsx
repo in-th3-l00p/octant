@@ -14,7 +14,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="grid max-w-3xl w-full h-96 grid-cols-1 sm:grid-cols-[1fr_1px_1fr] gap-12">
+      <div className="grid w-full h-96 grid-cols-1 sm:grid-cols-[1fr_1px_1fr] gap-12">
         <div className="w-full h-full bg-zinc-900 rounded-lg shadow p-12 flex flex-col justify-end gap-4 hover:scale-105 transition-all">
           <h2 className="text-purple-400 font-bold text-2xl">deposit & fund</h2>
           <p className="text-white">

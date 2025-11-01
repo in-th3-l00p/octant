@@ -4,8 +4,10 @@ export default function CenteredLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main className="flex flex-col gap-16 justify-center items-center w-screen min-h-screen">
-      {children}
+    <main className="flex justify-center items-center w-screen min-h-screen px-4">
+      <div className="w-full max-w-4xl space-y-16">
+        {children}
+      </div>
     </main>
   );
 }
