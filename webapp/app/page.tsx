@@ -7,14 +7,13 @@ import { ConnectButton } from "@rainbow-me/rainbowkit";
 export default function Home() {
   return (
     <main className="flex flex-col gap-16 justify-center items-center w-screen min-h-screen">
-      <div className="space-y-4 text-center">
+      <div className="space-y-4 flex flex-col items-center">
         <h1 className="text-8xl font-bold text-zinc-600 font-medium">fund loop</h1>
         <p>decentralized funding through deposits</p>
-      </div>
-
-      <div className="flex gap-4">
-        <ConnectWalletButton />
-        <Button variant="outline">about</Button>
+        <div className="flex gap-4">
+          <ConnectWalletButton />
+          <Button variant="outline">about</Button>
+        </div>
       </div>
 
       <div className="grid max-w-3xl w-full w-full grid-cols-1 sm:grid-cols-[1fr_1px_1fr] gap-12">
