@@ -14,18 +14,18 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="grid max-w-3xl w-full w-full grid-cols-1 sm:grid-cols-[1fr_1px_1fr] gap-12">
-        <div className="w-full h-96 bg-zinc-900 rounded-lg shadow p-12 flex flex-col justify-end gap-4 hover:scale-105 transition-all">
+      <div className="grid max-w-3xl w-full h-96 grid-cols-1 sm:grid-cols-[1fr_1px_1fr] gap-12">
+        <div className="w-full h-full bg-zinc-900 rounded-lg shadow p-12 flex flex-col justify-end gap-4 hover:scale-105 transition-all">
           <h2 className="text-purple-400 font-bold text-2xl">deposit & fund</h2>
           <p className="text-white">
             deposit your crypto to fund others in need & benefit from receiving
             cred through badges & rewards
           </p>
         </div>
-        <div className="w-[1px] h-96 py-12">
+        <div className="w-[1px] h-full py-12">
           <div className="w-full h-full bg-zinc-300 rounded-full"></div>
         </div>
-        <div className="w-full h-96 bg-zinc-900 rounded-lg shadow p-12 flex flex-col justify-end gap-4 hover:scale-105 transition-all">
+        <div className="w-full h-full bg-zinc-900 rounded-lg shadow p-12 flex flex-col justify-end gap-4 hover:scale-105 transition-all">
           <h2 className="text-purple-400 font-bold text-2xl">find support</h2>
           <p className="text-white">
             post about what you're building & find the funding you need
