@@ -1,12 +1,10 @@
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
-import Link from "next/link";
-import { ConnectWalletButton } from "@/components/ConnectWalletButton";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { ConnectWalletButton } from "@/components/connectWalletButton";
+import CenteredLayout from "@/components/centeredLayout";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-16 justify-center items-center w-screen min-h-screen">
+    <CenteredLayout>
       <div className="space-y-4 flex flex-col items-center">
         <h1 className="text-8xl font-bold text-zinc-600 font-medium">fund loop</h1>
         <p>decentralized funding through deposits</p>
@@ -34,6 +32,6 @@ export default function Home() {
           </p>
         </div>
       </div>
-    </main>
+    </CenteredLayout>
   );
 }
