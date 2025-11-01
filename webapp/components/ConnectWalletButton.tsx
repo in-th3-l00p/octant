@@ -30,17 +30,13 @@ export function ConnectWalletButton() {
             aria-hidden={!ready}
             style={!ready ? { opacity: 0, pointerEvents: 'none', userSelect: 'none' } : undefined}
           >
-            {!connected ? (
+            {(!connected || chain?.unsupported) ? (
               <Button type="button" variant="default" onClick={openConnectModal}>
-                Connect Wallet
-              </Button>
-            ) : chain?.unsupported ? (
-              <Button type="button" variant="destructive" onClick={openChainModal}>
-                Wrong network
+                connect
               </Button>
             ) : (
               <Button type="button" variant="default" onClick={() => router.push('/dashboard')}>
-                Dashboard
+                dashboard
               </Button>
             )}
           </div>
