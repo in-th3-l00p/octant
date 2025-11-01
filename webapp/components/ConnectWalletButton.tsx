@@ -12,8 +12,6 @@ export function ConnectWalletButton() {
       {({
         account,
         chain,
-        openAccountModal,
-        openChainModal,
         openConnectModal,
         authenticationStatus,
         mounted,
