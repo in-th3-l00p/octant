@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Fira_Sans } from "next/font/google";
 import "./globals.css";
+import "@rainbow-me/rainbowkit/styles.css";
+import Providers from "./providers";
 
 const firaSans = Fira_Sans({
   variable: "--font-fira-sans",
@@ -20,10 +22,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${firaSans.variable} antialiased bg-zinc-100`}
-      >
-        {children}
+      <body className={`${firaSans.variable} antialiased bg-zinc-100`}>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import { ConnectWalletButton } from "@/components/ConnectWalletButton";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 export default function Home() {
   return (
@@ -11,7 +13,7 @@ export default function Home() {
       </div>
 
       <div className="flex gap-4">
-        <Button variant="default">connect</Button>
+        <ConnectWalletButton />
         <Button variant="outline">about</Button>
       </div>
 
